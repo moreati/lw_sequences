@@ -1,0 +1,506 @@
+/*
+GraphViz graph of the rationality sequences at http://lesswrong.com
+To render run one of following:
+  dot -Tpng lw_sequences.gv > lw_sequences.png
+  dot -Tsvg lw_sequences.gv > lw_sequences.svg
+*/
+digraph sequences {
+  label = "Less Wrong Sequences";
+  node [shape=box, width=5.0, fixedsize=true, style=filled, fillcolor=white];
+  
+  subgraph cluster_a { // http://wiki.lesswrong.com/wiki/Mysterious_Answers_to_Mysterious_Questions
+    label = "Mysterious Answers to Mysterious Questions";
+    graph [style=filled, color=lightgrey];
+    a01 [URL="http://lesswrong.com/lw/i3/making_beliefs_pay_rent_in_anticipated_experiences/", label="Making Beliefs Pay Rent (in Anticipated Experiences)"];
+    a02 [URL="http://lesswrong.com/lw/i4/belief_in_belief/", label="Belief in Belief"];
+    a03 [URL="http://lesswrong.com/lw/i5/bayesian_judo/", label="Bayesian Judo"];
+    a04 [URL="http://lesswrong.com/lw/i6/professing_and_cheering/", label="Professing and Cheering"];
+    a05 [URL="http://lesswrong.com/lw/i7/belief_as_attire/", label="Belief as Attire"];
+    a06 [URL="http://lesswrong.com/lw/ia/focus_your_uncertainty/", label="Focus Your Uncertainty"];
+    a07 [URL="http://lesswrong.com/lw/ic/the_virtue_of_narrowness/", label="The Virtue of Narrowness"];
+    a08 [URL="http://lesswrong.com/lw/if/your_strength_as_a_rationalist/", label="Your Strength As A Rationalist"];
+    a09 [URL="http://lesswrong.com/lw/ih/absence_of_evidence_is_evidence_of_absence/", label="Absence of Evidence '''is''' Evidence of Absence"];
+    a10 [URL="http://lesswrong.com/lw/ii/conservation_of_expected_evidence/", label="Conservation of Expected Evidence"];
+    a11 [URL="http://lesswrong.com/lw/il/hindsight_bias/", label="Hindsight Bias"];
+    a12 [URL="http://lesswrong.com/lw/im/hindsight_devalues_science/", label="Hindsight Devalues Science"];
+    a13 [URL="http://lesswrong.com/lw/ip/fake_explanations/", label="Fake Explanations"];
+    a14 [URL="http://lesswrong.com/lw/iq/guessing_the_teachers_password/", label="Guessing the Teacher's Password"];
+    a15 [URL="http://lesswrong.com/lw/ir/science_as_attire/", label="Science as Attire"];
+    a16 [URL="http://lesswrong.com/lw/is/fake_causality/", label="Fake Causality"];
+    a17 [URL="http://lesswrong.com/lw/it/semantic_stopsigns/", label="Semantic Stopsigns"];
+    a18 [URL="http://lesswrong.com/lw/iu/mysterious_answers_to_mysterious_questions/", label="Mysterious Answers to Mysterious Questions"];
+    a19 [URL="http://lesswrong.com/lw/iv/the_futility_of_emergence/", label="The Futility of Emergence"];
+    a20 [URL="http://lesswrong.com/lw/ix/say_not_complexity/", label="Say Not \"Complexity\""];
+    a21 [URL="http://lesswrong.com/lw/iw/positive_bias_look_into_the_dark/", label="Positive Bias: Look Into the Dark"];
+    a22 [URL="http://lesswrong.com/lw/iy/my_wild_and_reckless_youth/", label="My Wild and Reckless Youth"];
+    a23 [URL="http://lesswrong.com/lw/iz/failing_to_learn_from_history/", label="Failing to Learn from History"];
+    a24 [URL="http://lesswrong.com/lw/j0/making_history_available/", label="Making History Available"];
+    a25 [URL="http://lesswrong.com/lw/j2/explainworshipignore/", label="Explain/Worship/Ignore?"];
+    a26 [URL="http://lesswrong.com/lw/j3/science_as_curiositystopper/", label="\"Science\" as Curiosity-Stopper"];
+    a27 [URL="http://lesswrong.com/lw/jb/applause_lights/", label="Applause Lights"];
+    a28 [URL="http://lesswrong.com/lw/wb/chaotic_inversion/", label="Chaotic Inversion"];
+    
+    a01 -> a02 -> a03 -> a04 -> a05 -> a06 -> a07 -> a08 -> a09 -> a10 -> 
+    a11 -> a12 -> a13 -> a14 -> a15 -> a16 -> a17 -> a18 -> a19 -> a20 -> 
+    a21 -> a22 -> a23 -> a24 -> a25 -> a26 -> a27 -> a28;
+  }
+  
+  subgraph cluster_b { // http://wiki.lesswrong.com/wiki/A_Human%27s_Guide_to_Words
+    label = "A Human Guide to Words";
+    graph [style=filled, color=lightgrey];
+    b01 [URL="http://lesswrong.com/lw/ne/the_parable_of_the_dagger", label="The Parable of the Dagger"];
+    b02 [URL="http://lesswrong.com/lw/nf/the_parable_of_hemlock", label="The Parable of Hemlock"];
+    b03 [URL="http://lesswrong.com/lw/ng/words_as_hidden_inferences", label="Words as Hidden Inferences"];
+    b04 [URL="http://lesswrong.com/lw/nh/extensions_and_intensions", label="Extensions and Intensions"];
+    b05 [URL="http://lesswrong.com/lw/nj/similarity_clusters", label="Similarity Clusters"];
+    b06 [URL="http://lesswrong.com/lw/nk/typicality_and_asymmetrical_similarity", label="Typicality and Asymmetrical Similarity"];
+    b07 [URL="http://lesswrong.com/lw/nl/the_cluster_structure_of_thingspace", label="The Cluster Structure of Thingspace"];
+    b08 [URL="http://lesswrong.com/lw/nm/disguised_queries", label="Disguised Queries"];
+    b09 [URL="http://lesswrong.com/lw/nn/neural_categories", label="Neural Categories"];
+    b10 [URL="http://lesswrong.com/lw/no/how_an_algorithm_feels_from_inside", label="How An Algorithm Feels From Inside"];
+    b11 [URL="http://lesswrong.com/lw/np/disputing_definitions", label="Disputing Definitions"];
+    b12 [URL="http://lesswrong.com/lw/nq/feel_the_meaning", label="Feel the Meaning"];
+    b13 [URL="http://lesswrong.com/lw/nr/the_argument_from_common_usage", label="The Argument From Common Usage"];
+    b14 [URL="http://lesswrong.com/lw/ns/empty_labels", label="Empty Labels"];
+    b15 [URL="http://lesswrong.com/lw/nu/taboo_your_words", label="Taboo Your Words"];
+    b16 [URL="http://lesswrong.com/lw/nv/replace_the_symbol_with_the_substance", label="Replace the Symbol with the Substance"];
+    b17 [URL="http://lesswrong.com/lw/nw/fallacies_of_compression", label="Fallacies of Compression"];
+    b18 [URL="http://lesswrong.com/lw/nx/categorizing_has_consequences", label="Categorizing Has Consequences"];
+    b19 [URL="http://lesswrong.com/lw/ny/sneaking_in_connotations", label="Sneaking in Connotations"];
+    b20 [URL="http://lesswrong.com/lw/nz/arguing_by_definition", label="Arguing \"By Definition\""];
+    b21 [URL="http://lesswrong.com/lw/o0/where_to_draw_the_boundary", label="Where to Draw the Boundary?"];
+    b22 [URL="http://lesswrong.com/lw/o1/entropy_and_short_codes", label="Entropy, and Short Codes"];
+    b23 [URL="http://lesswrong.com/lw/o2/mutual_information_and_density_in_thingspace", label="Mutual Information, and Density in Thingspace"];
+    b24 [URL="http://lesswrong.com/lw/o3/superexponential_conceptspace_and_simple_words", label="Superexponential Conceptspace, and Simple Words"];
+    b25 [URL="http://lesswrong.com/lw/o8/conditional_independence_and_naive_bayes", label="Conditional Independence, and Naive Bayes"];
+    b26 [URL="http://lesswrong.com/lw/o9/words_as_mental_paintbrush_handles", label="Words as Mental Paintbrush Handles"];
+    b27 [URL="http://lesswrong.com/lw/oc/variable_question_fallacies", label="Variable Question Fallacies"];
+    b28 [URL="http://lesswrong.com/lw/od/37_ways_that_words_can_be_wrong", label="37 Ways That Suboptimal Use Of Categories Can Have Negative Side Effects On Your Cognition"];
+    
+    b01 -> b02 -> b03 -> b04 -> b05 -> b06 -> b07 -> b08 -> b09 -> b10 -> 
+    b11 -> b12 -> b13 -> b14 -> b15 -> b16 -> b17 -> b18 -> b19 -> b20 -> 
+    b21 -> b22 -> b23 -> b24 -> b25 -> b26 -> b27 -> b28;
+  }
+  
+  subgraph cluster_c { // http://wiki.lesswrong.com/wiki/How_To_Actually_Change_Your_Mind
+    label = "How To Actually Change Your Mind";
+    subgraph cluster_ca { // http://wiki.lesswrong.com/wiki/Politics_is_the_Mind-Killer
+      label = "Politics is the Mind-Killer";
+      graph [style=filled, color=lightgrey];
+      ca01 [URL="http://lesswrong.com/lw/gt/a_fable_of_science_and_politics/", label="A Fable of Science and Politics"];
+      ca02 [URL="http://lesswrong.com/lw/gw/politics_is_the_mindkiller/", label="Politics is the Mind-Killer"];
+      ca03 [URL="http://lesswrong.com/lw/gz/policy_debates_should_not_appear_onesided/", label="Policy Debates Should Not Appear One-Sided"];
+      ca04 [URL="http://lesswrong.com/lw/h1/the_scales_of_justice_the_notebook_of_rationality/", label="The Scales of Justice, the Notebook of Rationality"];
+      ca05 [URL="http://lesswrong.com/lw/hz/correspondence_bias/", label="Correspondence Bias"];
+      ca06 [URL="http://lesswrong.com/lw/i0/are_your_enemies_innately_evil/", label="Are Your Enemies Innately Evil?"];
+      ca07 [URL="http://lesswrong.com/lw/lt/the_robbers_cave_experiment/", label="The Robbers Cave Experiment"];
+      ca08 [URL="http://lesswrong.com/lw/lw/reversed_stupidity_is_not_intelligence/", label="Reversed Stupidity is Not Intelligence"];
+       ca09 [URL="http://lesswrong.com/lw/lx/argument_screens_off_authority/", label="Argument Screens Off Authority"];
+       ca10 [URL="http://lesswrong.com/lw/ly/hug_the_query/", label="Hug the Query"];
+      ca11 [URL="http://lesswrong.com/lw/jc/rationality_and_the_english_language/", label="Rationality and the English Language"];
+      ca12 [URL="http://lesswrong.com/lw/m3/politics_and_awful_art/", label="Politics and Awful Art"]; //(but first read: [http://lesswrong.com/lw/m2/the_litany_against_gurus/ The Litany Against Gurus])
+      ca13 [URL="http://lesswrong.com/lw/m5/false_laughter/", label="False Laughter"];
+      ca14 [URL="http://lesswrong.com/lw/jd/human_evil_and_muddled_thinking/", label="Human Evil and Muddled Thinking"];
+      
+      ca01 -> ca02 -> ca03 -> ca04 -> ca05 -> ca06 -> ca07 -> ca08 -> ca09 -> ca10 -> 
+      ca11 -> ca12 -> ca13 -> ca14;
+    }
+    
+    subgraph cluster_cb { // http://wiki.lesswrong.com/wiki/Death_Spirals_and_the_Cult_Attractor
+      label = "Death Spirals and the Cult Attractor";
+      graph [style=filled, color=lightgrey];
+      cb01 [URL="http://lesswrong.com/lw/lg/the_affect_heuristic/", label="The Affect Heuristic"];
+       cb02 [URL="http://lesswrong.com/lw/lh/evaluability_and_cheap_holiday_shopping/", label="Evaluability and Cheap Holiday Shopping"];
+       cb03 [URL="http://lesswrong.com/lw/li/unbounded_scales_huge_jury_awards_futurism/", label="Unbounded Scales, Huge Jury Awards, & Futurism"];
+      cb04 [URL="http://lesswrong.com/lw/lj/the_halo_effect/", label="The Halo Effect"];
+       cb05 [URL="http://lesswrong.com/lw/lk/superhero_bias/", label="Superhero Bias"];
+       cb06 [URL="http://lesswrong.com/lw/ll/mere_messiahs/", label="Mere Messiahs"];
+      cb07 [URL="http://lesswrong.com/lw/lm/affective_death_spirals/", label="Affective Death Spirals"];
+      cb08 [URL="http://lesswrong.com/lw/ln/resist_the_happy_death_spiral/", label="Resist the Happy Death Spiral"];
+      cb09 [URL="http://lesswrong.com/lw/lo/uncritical_supercriticality/", label="Uncritical Supercriticality"];
+      cb10 [URL="http://lesswrong.com/lw/lr/evaporative_cooling_of_group_beliefs/", label="Evaporative Cooling of Group Beliefs"];
+      cb11 [URL="http://lesswrong.com/lw/ls/when_none_dare_urge_restraint/", label="When None Dare Urge Restraint"];
+      cb12 [URL="http://lesswrong.com/lw/lt/the_robbers_cave_experiment/", label="The Robbers Cave Experiment"];
+      cb13 [URL="http://lesswrong.com/lw/lv/every_cause_wants_to_be_a_cult/", label="Every Cause Wants to be a Cult"];
+      cb14 [URL="http://lesswrong.com/lw/lz/guardians_of_the_truth/", label="Guardians of the Truth"];
+       cb15 [URL="http://lesswrong.com/lw/m0/guardians_of_the_gene_pool/", label="Guardians of the Gene Pool"];
+       cb16 [URL="http://lesswrong.com/lw/m1/guardians_of_ayn_rand/", label="Guardians of Ayn Rand"];
+      cb17 [URL="http://lesswrong.com/lw/m2/the_litany_against_gurus/", label="The Litany Against Gurus"];
+      cb18 [URL="http://lesswrong.com/lw/m4/two_cult_koans/", label="Two Cult Koans"];
+      cb19 [URL="http://lesswrong.com/lw/m9/aschs_conformity_experiment/", label="Asch's Conformity Experiment"];
+      cb20 [URL="http://lesswrong.com/lw/mb/lonely_dissent/", label="Lonely Dissent"];
+      cb21 [URL="http://lesswrong.com/lw/md/cultish_countercultishness/", label="Cultish Countercultishness"];
+      
+      cb01 -> cb02 -> cb03 -> cb04 -> cb05 -> cb06 -> cb07 -> cb08 -> cb09 -> cb10 -> 
+      cb11 -> cb12 -> cb13 -> cb14 -> cb15 -> cb16 -> cb17 -> cb18 -> cb19 -> cb20 -> 
+      cb21;
+    }
+    
+    subgraph cluster_cc { // http://wiki.lesswrong.com/wiki/Seeing_with_Fresh_Eyes
+      label = "Seeing with Fresh Eyes";
+      graph [style=filled, color=lightgrey];
+      cc01 [URL="http://lesswrong.com/lw/j7/anchoring_and_adjustment/", label="Anchoring and Adjustment"];
+      cc02 [URL="http://lesswrong.com/lw/k3/priming_and_contamination/", label="Priming and Contamination"];
+      cc03 [URL="http://lesswrong.com/lw/k4/do_we_believe_everything_were_told/", label="Do We Believe Everything We're Told?"];
+      cc04 [URL="http://lesswrong.com/lw/k5/cached_thoughts/", label="Cached Thoughts"];
+      cc05 [URL="http://lesswrong.com/lw/k6/the_outside_the_box_box/", label="The \"Outside the Box\" Box"];
+      cc06 [URL="http://lesswrong.com/lw/k7/original_seeing/", label="Original Seeing"];
+      cc07 [URL="http://lesswrong.com/lw/k9/the_logical_fallacy_of_generalization_from/", label="The Logical Fallacy of Generalization from Fictional Evidence"];
+      cc08 [URL="http://lesswrong.com/lw/k8/how_to_seem_and_be_deep/", label="How to Seem (and Be) Deep"];
+      cc09 [URL="http://lesswrong.com/lw/jx/we_change_our_minds_less_often_than_we_think/", label="We Change Our Minds Less Often Than We Think"];
+      cc10 [URL="http://lesswrong.com/lw/ka/hold_off_on_proposing_solutions/", label="Hold Off On Proposing Solutions"];
+      cc11 [URL="http://lesswrong.com/lw/m9/aschs_conformity_experiment/", label="Asch's Conformity Experiment"];
+      cc12 [URL="http://lesswrong.com/lw/ma/on_expressing_your_concerns/", label="On Expressing Your Concerns"];
+      cc13 [URL="http://lesswrong.com/lw/mb/lonely_dissent/", label="Lonely Dissent"];
+      cc14 [URL="http://lesswrong.com/lw/s3/the_genetic_fallacy/", label="The Genetic Fallacy"];
+      
+      cc01 -> cc02 -> cc03 -> cc04 -> cc05 -> cc06 -> cc07 -> cc08 -> cc09 -> cc10 -> 
+      cc11 -> cc12 -> cc13 -> cc14;
+    }
+    
+    subgraph cluster_cd { // http://wiki.lesswrong.com/wiki/How_To_Actually_Change_Your_Mind#Noticing_Confusion
+      label = "Noticing Confusion";
+      graph [style=filled, color=lightgrey];
+      cd01 [URL="http://lesswrong.com/lw/if/your_strength_as_a_rationalist/", label="Your Strength as a Rationalist"];
+      cd02 [URL="http://lesswrong.com/lw/ih/absence_of_evidence_is_evidence_of_absence/", label="Absence of Evidence Is Evidence of Absence"];
+      cd03 [URL="http://lesswrong.com/lw/il/hindsight_bias/", label="Hindsight Bias"];
+      cd04 [URL="http://lesswrong.com/lw/im/hindsight_devalues_science/", label="Hindsight Devalues Science"];
+      cd05 [URL="http://lesswrong.com/lw/iw/positive_bias_look_into_the_dark/", label="Positive Bias: Look Into the Dark"];
+      
+      cd01 -> cd02 -> cd03 -> cd04 -> cd05;
+    }
+    
+    subgraph cluster_ce { // http://wiki.lesswrong.com/wiki/How_To_Actually_Change_Your_Mind#Against_Rationalization
+      label = "Against Rationalization";
+      graph [style=filled, color=lightgrey];
+      ce01 [URL="http://lesswrong.com/lw/he/knowing_about_biases_can_hurt_people/", label="Knowing About Biases Can Hurt People"];
+      ce02 [URL="http://lesswrong.com/lw/ii/conservation_of_expected_evidence/", label="Conservation of Expected Evidence"];
+      ce03 [URL="http://lesswrong.com/lw/ij/update_yourself_incrementally/", label="Update Yourself Incrementally"];
+      ce04 [URL="http://lesswrong.com/lw/ik/one_argument_against_an_army/", label="One Argument Against An Army"];
+      ce05 [URL="http://lesswrong.com/lw/js/the_bottom_line/", label="The Bottom Line"];
+      ce06 [URL="http://lesswrong.com/lw/jt/what_evidence_filtered_evidence/", label="What Evidence Filtered Evidence?"];
+      ce07 [URL="http://lesswrong.com/lw/ju/rationalization/", label="Rationalization"];
+      ce08 [URL="http://lesswrong.com/lw/jw/a_rational_argument/", label="A Rational Argument"];
+      ce09 [URL="http://lesswrong.com/lw/jy/avoiding_your_beliefs_real_weak_points/", label="Avoiding Your Belief's Real Weak Points"];
+      ce10 [URL="http://lesswrong.com/lw/km/motivated_stopping_and_motivated_continuation/", label="Motivated Stopping and Motivated Continuation"];
+       ce11 [URL="http://lesswrong.com/lw/ko/a_case_study_of_motivated_continuation/", label="A Case Study of Motivated Continuation"];
+      ce12 [URL="http://lesswrong.com/lw/kq/fake_justification/", label="Fake Justification"];
+      ce13 [URL="http://lesswrong.com/lw/kz/fake_optimization_criteria/", label="Fake Optimization Criteria"];
+      ce14 [URL="http://lesswrong.com/lw/wj/is_that_your_true_rejection/", label="Is That Your True Rejection?"];
+      ce15 [URL="http://lesswrong.com/lw/uw/entangled_truths_contagious_lies/", label="Entangled Truths, Contagious Lies"];
+       ce16 [URL="http://lesswrong.com/lw/9a/of_lies_and_black_swan_blowups/", label="Of Lies and Black Swan Blowups"];
+      ce17 [URL="http://lesswrong.com/lw/uy/dark_side_epistemology/", label="Anti-Epistemology"];
+       ce18 [URL="http://lesswrong.com/lw/57/the_sacred_mundane/", label="The Sacred Mundane"];
+      
+      ce01 -> ce02 -> ce03 -> ce04 -> ce05 -> ce06 -> ce07 -> ce08 -> ce09 -> ce10 -> 
+      ce11 -> ce12 -> ce13 -> ce14 -> ce15 -> ce16 -> ce17 -> ce18;
+    }
+    
+    subgraph cluster_cf { // http://wiki.lesswrong.com/wiki/How_To_Actually_Change_Your_Mind#Against_Doublethink
+      label = "Against Doublethink";
+      graph [style=filled, color=lightgrey];
+      cf01 [URL="http://lesswrong.com/lw/i4/belief_in_belief/", label="Belief in Belief"];
+      cf02 [URL="http://lesswrong.com/lw/k0/singlethink/", label="Singlethink"];
+      cf03 [URL="http://lesswrong.com/lw/je/doublethink_choosing_to_be_biased/", label="Doublethink: Choosing to be Biased"];
+      cf04 [URL="http://lesswrong.com/lw/r/no_really_ive_deceived_myself/", label="No, Really, I've Deceived Myself"];
+      cf05 [URL="http://lesswrong.com/lw/s/belief_in_selfdeception/", label="Belief in Self-Deception"];
+      cf06 [URL="http://lesswrong.com/lw/1f/moores_paradox/", label="Moore's Paradox"];
+      cf07 [URL="http://lesswrong.com/lw/1o/dont_believe_youll_selfdeceive/", label="Don't Believe You'll Self-Deceive"];
+      
+      cf01 -> cf02 -> cf03 -> cf04 -> cf05 -> cf06 -> cf07;
+    }
+    
+    subgraph cluster_cg { // http://wiki.lesswrong.com/wiki/How_To_Actually_Change_Your_Mind#Overly_Convenient_Excuses
+      label = "Overly Convenient Excuses";
+      graph [style=filled, color=lightgrey];
+      cg01 [URL="http://lesswrong.com/lw/gq/the_proper_use_of_humility/", label="The Proper Use of Humility"];
+      cg02 [URL="http://lesswrong.com/lw/hu/the_third_alternative/", label="The Third Alternative"];
+      cg03 [URL="http://lesswrong.com/lw/19m/privileging_the_hypothesis/", label="Privileging the Hypothesis"]; //(and its [[Privileging the hypothesis | requisites]], like [[Locating the hypothesis]])
+      cg04 [URL="http://lesswrong.com/lw/ml/but_theres_still_a_chance_right/", label="But There's Still A Chance, Right?"];
+       cg05 [URL="http://lesswrong.com/lw/mm/the_fallacy_of_gray/", label="The Fallacy of Gray"];
+       cg06 [URL="http://lesswrong.com/lw/mn/absolute_authority/", label="Absolute Authority"];
+       cg07 [URL="http://lesswrong.com/lw/jr/how_to_convince_me_that_2_2_3/", label="How to Convince Me That 2 + 2 = 3"];
+       cg08 [URL="http://lesswrong.com/lw/mo/infinite_certainty/", label="Infinite Certainty"];
+       cg09 [URL="http://lesswrong.com/lw/mp/0_and_1_are_not_probabilities/", label="0 And 1 Are Not Probabilities"];
+      
+      cg01 -> cg02 -> cg03 -> cg04 -> cg05 -> cg06 -> cg07 -> cg08 -> cg09;
+    }
+    
+    subgraph cluster_ch { // http://wiki.lesswrong.com/wiki/How_To_Actually_Change_Your_Mind#Letting_Go
+      label = "Letting Go";
+      graph [style=filled, color=lightgrey];
+      ch01 [URL="http://lesswrong.com/lw/hp/feeling_rational/", label="Feeling Rational"];
+      ch02 [URL="http://lesswrong.com/lw/i9/the_importance_of_saying_oops/", label="The Importance of Saying \"Oops\""];
+       ch03 [URL="http://lesswrong.com/lw/j8/the_crackpot_offer/", label="The Crackpot Offer"];
+       ch04 [URL="http://lesswrong.com/lw/gx/just_lose_hope_already/", label="Just Lose Hope Already"];
+      ch05 [URL="http://lesswrong.com/lw/ib/the_proper_use_of_doubt/", label="The Proper Use of Doubt"];
+      ch06 [URL="http://lesswrong.com/lw/id/you_can_face_reality/", label="You Can Face Reality"];
+      ch07 [URL="http://lesswrong.com/lw/jz/the_meditation_on_curiosity/", label="The Meditation on Curiosity"];
+      ch08 [URL="http://lesswrong.com/lw/nb/something_to_protect/", label="Something to Protect"];
+      ch09 [URL="http://lesswrong.com/lw/k1/no_one_can_exempt_you_from_rationalitys_laws/", label="No One Can Exempt You From Rationality's Laws"];
+      ch10 [URL="http://lesswrong.com/lw/o4/leave_a_line_of_retreat/", label="Leave a Line of Retreat"];
+      ch11 [URL="http://lesswrong.com/lw/ur/crisis_of_faith/", label="Crisis of Faith"];
+       ch12 [URL="http://lesswrong.com/lw/us/the_ritual/", label="The Ritual"]; //(short story)
+      
+      ch01 -> ch02 -> ch03 -> ch04 -> ch05 -> ch06 -> ch07 -> ch08 -> ch09 -> ch10 -> 
+      ch11 -> ch12;
+    }
+    
+    ca14 -> cb01;
+    cb21 -> cc01;
+    cc14 -> cd01;
+    cd05 -> ce01;
+    ce18 -> cf01;
+    cf07 -> cg01;
+    cg09 -> ch01;
+  }
+  
+  subgraph cluster_d { // http://wiki.lesswrong.com/wiki/Reductionism_(sequence)
+    label = "Reductionism";
+    graph [style=filled, color=lightgrey];
+    d01 [URL="http://lesswrong.com/lw/of/dissolving_the_question/", label="Dissolving the Question"];
+    d02 [URL="http://lesswrong.com/lw/og/wrong_questions/", label="Wrong Questions"];
+    d03 [URL="http://lesswrong.com/lw/oh/righting_a_wrong_question/", label="Righting a Wrong Question"];
+    d04 [URL="http://lesswrong.com/lw/oi/mind_projection_fallacy/", label="Mind Projection Fallacy"];
+    d05 [URL="http://lesswrong.com/lw/oj/probability_is_in_the_mind/", label="Probability is in the Mind"];
+    d06 [URL="http://lesswrong.com/lw/ok/the_quotation_is_not_the_referent/", label="The Quotation is not the Referent"];
+    d07 [URL="http://lesswrong.com/lw/om/qualitatively_confused/", label="Qualitatively Confused"];
+    d08 [URL="http://lesswrong.com/lw/on/reductionism/", label="Reductionism"];
+    d09 [URL="http://lesswrong.com/lw/oo/explaining_vs_explaining_away/", label="Explaining vs. Explaining Away"];
+    d10 [URL="http://lesswrong.com/lw/op/fake_reductionism/", label="Fake Reductionism"];
+    d11 [URL="http://lesswrong.com/lw/oq/savanna_poets/", label="Savanna Poets"];
+    d12 [URL="http://lesswrong.com/lw/or/joy_in_the_merely_real/", label="Joy in the Merely Real"]; //Actually a sequence
+    d13 [URL="http://lesswrong.com/lw/p2/hand_vs_fingers/", label="Hand vs. Fingers"];
+    d14 [URL="http://lesswrong.com/lw/p3/angry_atoms/", label="Angry Atoms"];
+    d15 [URL="http://lesswrong.com/lw/p4/heat_vs_motion/", label="Heat vs. Motion"];
+    d16 [URL="http://lesswrong.com/lw/p5/brain_breakthrough_its_made_of_neurons/", label="Brain Breakthrough! It's Made of Neurons!"];
+    d17 [URL="http://lesswrong.com/lw/p6/reductive_reference/", label="Reductive Reference"];
+    d18 [URL="http://wiki.lesswrong.com/wiki/Zombies_(sequence)", label="Zombies"];
+    d19 [URL="http://lesswrong.com/lw/tv/excluding_the_supernatural/", label="Excluding the Supernatural"];
+    d20 [URL="http://lesswrong.com/lw/tw/psychic_powers/", label="Psychic Powers"];
+    
+    d01 -> d02 -> d03 -> d04 -> d05 -> d06 -> d07 -> d08 -> d09 -> d10 -> 
+    d11 -> d12 -> d13 -> d14 -> d15 -> d16 -> d17 -> d18 -> d19 -> d20;
+  }
+  
+  subgraph cluster_e { // http://lesswrong.com/lw/r5/the_quantum_physics_sequence/
+    label = "Quantum Physics";
+    graph [style=filled, color=lightgrey];
+    subgraph cluster_ea {
+      label = "Basic Quantum Mechanics";
+      ea01 [URL="http://lesswrong.com/lw/pc/quantum_explanations/", label="Quantum Explanations"]; 
+      ea02 [URL="http://lesswrong.com/lw/pd/configurations_and_amplitude/", label="Configurations and Amplitude"]; 
+      ea03 [URL="http://lesswrong.com/lw/pe/joint_configurations/", label="Joint Configurations"]; 
+      ea04 [URL="http://lesswrong.com/lw/pf/distinct_configurations/", label="Distinct Configurations"]; 
+      ea05 [URL="http://lesswrong.com/lw/pg/where_philosophy_meets_science/", label="Where Philosophy Meets Science"]; 
+      ea06 [URL="http://lesswrong.com/lw/ph/can_you_prove_two_particles_are_identical/", label="Can You Prove Two Particles Are Identical?"]; 
+      ea07 [URL="http://lesswrong.com/lw/pi/classical_configuration_spaces/", label="Classical Configuration Spaces"]; 
+      ea08 [URL="http://lesswrong.com/lw/pj/the_quantum_arena/", label="The Quantum Arena"]; 
+      ea09 [URL="http://lesswrong.com/lw/pk/feynman_paths/", label="Feynman Paths"]; 
+      ea10 [URL="http://lesswrong.com/lw/pl/no_individual_particles/", label="No Individual Particles"]; 
+      ea11 [URL="http://lesswrong.com/lw/pm/identity_isnt_in_specific_atoms/", label="Identity Isn't In Specific Atoms"];
+      ea12 [URL="http://lesswrong.com/lw/po/three_dialogues_on_identity/", label="Three Dialogues on Identity"]; 
+      ea13 [URL="http://lesswrong.com/lw/pp/decoherence/", label="Decoherence"]; 
+      ea14 [URL="http://lesswrong.com/lw/pq/the_socalled_heisenberg_uncertainty_principle/", label="The So-Called Heisenberg Uncertainty Principle"]; 
+      ea15 [URL="http://lesswrong.com/lw/pr/which_basis_is_more_fundamental/", label="Which Basis Is More Fundamental?"]; 
+      ea16 [URL="http://lesswrong.com/lw/ps/where_physics_meets_experience/", label="Where Physics Meets Experience"]; 
+      ea17 [URL="http://lesswrong.com/lw/pt/where_experience_confuses_physicists/", label="Where Experience Confuses Physicists"]; 
+      ea18 [URL="http://lesswrong.com/lw/pu/on_being_decoherent/", label="On Being Decoherent"]; 
+      ea19 [URL="http://lesswrong.com/lw/pv/the_conscious_sorites_paradox/", label="The Conscious Sorites Paradox"]; 
+      ea20 [URL="http://lesswrong.com/lw/pw/decoherence_is_pointless/", label="Decoherece is Pointless"]; 
+      ea21 [URL="http://lesswrong.com/lw/px/decoherent_essences/", label="Decoherent Essences"]; 
+      ea22 [URL="http://lesswrong.com/lw/py/the_born_probabilities/", label="The Born Probabilities"]; 
+      ea23 [URL="http://lesswrong.com/lw/pz/decoherence_as_projection/", label="Decoherence as Projection"]; 
+      ea24 [URL="http://lesswrong.com/lw/q0/entangled_photons/", label="Entangled Photons"];
+      
+      ea01 -> ea02 -> ea03 -> ea04 -> ea05 -> ea06 -> ea07 -> ea08 -> ea09 -> ea10 -> 
+      ea11 -> ea12 -> ea13 -> ea14 -> ea15 -> ea16 -> ea17 -> ea18 -> ea19 -> ea20 -> 
+      ea21 -> ea22 -> ea23 -> ea24;
+    }
+    
+    subgraph cluster_eb {
+      label = "Many Worlds";
+      graph [style=filled, color=lightgrey];
+      eb01 [URL="http://lesswrong.com/lw/q1/bells_theorem_no_epr_reality/", label="Bell's Theorem: No EPR \"Reality\""]; 
+      eb02 [URL="http://lesswrong.com/lw/q2/spooky_action_at_a_distance_the_nocommunication/", label="Spooky Action at a Distance: The No-Communication Theorem"]; 
+      eb03 [URL="http://lesswrong.com/lw/q3/decoherence_is_simple/", label="Decoherence is Simple"];
+      eb04 [URL="http://lesswrong.com/lw/q4/decoherence_is_falsifiable_and_testable/", label="Decoherence is Falsifiable and Testable"]; 
+      eb05 [URL="http://lesswrong.com/lw/q5/quantum_nonrealism/", label="Quantum Non-Realism"]; 
+      eb06 [URL="http://lesswrong.com/lw/q6/collapse_postulates/", label="Collapse Postulates"]; 
+      eb07 [URL="http://lesswrong.com/lw/q7/if_manyworlds_had_come_first/", label="If Many-Worlds Had Come First"]; 
+      eb08 [URL="http://lesswrong.com/lw/q8/many_worlds_one_best_guess/", label="Many Worlds, One Best Guess"]; 
+      eb09 [URL="http://lesswrong.com/lw/qz/living_in_many_worlds/", label="Living in Many Worlds"];
+      
+      eb01 -> eb02 -> eb03 -> eb04 -> eb05 -> eb06 -> eb07 -> eb08 -> eb09;
+    }
+    
+    subgraph cluster_ec {
+      label = "Timeless Physics";
+      graph [style=filled, color=lightgrey];
+      ec01 [URL="http://lesswrong.com/lw/qm/machs_principle_antiepiphenomenal_physics/", label="Mach's Principle: Anti-Epiphenomenal Physics"]; 
+      ec02 [URL="http://lesswrong.com/lw/qo/relative_configuration_space/", label="Relative Configuration Space"]; 
+      ec03 [URL="http://lesswrong.com/lw/qp/timeless_physics/", label="Timeless Physics"]; 
+      ec04 [URL="http://lesswrong.com/lw/qq/timeless_beauty/", label="Timeless Beauty"]; 
+      ec05 [URL="http://lesswrong.com/lw/qr/timeless_causality/", label="Timeless Causality"]; 
+      ec06 [URL="http://lesswrong.com/lw/qx/timeless_identity/", label="Timeless Identity"]; 
+      ec07 [URL="http://lesswrong.com/lw/r0/thou_art_physics/", label="Thou Art Physics"]; 
+      ec08 [URL="http://lesswrong.com/lw/r1/timeless_control/", label="Timeless Control"];
+      
+      ec01 -> ec02 -> ec03 -> ec04 -> ec05 -> ec06 -> ec07 -> ec08;
+    }
+    
+    subgraph cluster_ed {
+      label = "Rationality and Science";
+      graph [style=filled, color=lightgrey];
+      ed01 [URL="http://lesswrong.com/lw/q9/the_failures_of_eld_science/", label="The Failures of Eld Science"]; 
+      ed02 [URL="http://lesswrong.com/lw/qa/the_dilemma_science_or_bayes/", label="The Dilemma: Science or Bayes?"]; 
+      ed03 [URL="http://lesswrong.com/lw/qb/science_doesnt_trust_your_rationality/", label="Science Doesn't Trust Your Rationality"]; 
+      ed04 [URL="http://lesswrong.com/lw/qc/when_science_cant_help/", label="When Science Can't Help"]; 
+      ed05 [URL="http://lesswrong.com/lw/qd/science_isnt_strict_enough/", label="Science Isn't Strict Enough"];
+      ed06 [URL="http://lesswrong.com/lw/qe/do_scientists_already_know_this_stuff/", label="Do Scientists Already Know This Stuff?"]; 
+      ed07 [URL="http://lesswrong.com/lw/qf/no_safe_defense_not_even_science/", label="No Safe Defense, Not Even Science"]; 
+      ed08 [URL="http://lesswrong.com/lw/qg/changing_the_definition_of_science/", label="Changing the Definition of Science"]; 
+      ed09 [URL="http://lesswrong.com/lw/qi/faster_than_science/", label="Faster Than Science"]; 
+      ed10 [URL="http://lesswrong.com/lw/qj/einsteins_speed/", label="Einstein's Speed"]; 
+      ed11 [URL="http://lesswrong.com/lw/qk/that_alien_message/", label="That Alien Message"]; 
+      ed12 [URL="http://lesswrong.com/lw/ql/my_childhood_role_model/", label="My Childhood Role Model"]; 
+      ed13 [URL="http://lesswrong.com/lw/qs/einsteins_superpowers/", label="Einstein's Superpowers"]; 
+      ed14 [URL="http://lesswrong.com/lw/qt/class_project/", label="Class Project"]; 
+      ed15 [URL="http://lesswrong.com/lw/qy/why_quantum/", label="Why Quantum?"];
+      
+      ed01 -> ed02 -> ed03 -> ed04 -> ed05 -> ed06 -> ed07 -> ed08 -> ed09 -> ed10 -> 
+      ed11 -> ed12 -> ed13 -> ed14 -> ed15;
+    }
+    
+    ea24 -> eb01;
+    eb09 -> ec01;
+    ec08 -> ed01;
+  }
+  
+  subgraph cluster_f { // http://wiki.lesswrong.com/wiki/Metaethics_sequence
+    label = "Metaethics"
+    graph [style=filled, color=lightgrey];
+    f01 [URL="http://lesswrong.com/lw/rh/heading_toward_morality/", label="Heading Toward Morality"];
+    f02 [URL="http://lesswrong.com/lw/rn/no_universally_compelling_arguments/", label="No Universally Compelling Arguments"];
+    f03 [URL="http://lesswrong.com/lw/ro/2place_and_1place_words/", label="2-Place and 1-Place Words"];
+    f04 [URL="http://lesswrong.com/lw/rq/what_would_you_do_without_morality/", label="What Would You Do Without Morality?"];
+    f05 [URL="http://lesswrong.com/lw/rr/the_moral_void/", label="The Moral Void"];
+    f06 [URL="http://lesswrong.com/lw/rs/created_already_in_motion/", label="Created Already In Motion"];
+    f07 [URL="http://lesswrong.com/lw/ru/the_bedrock_of_fairness/", label="The Bedrock of Fairness"];
+    f08 [URL="http://lesswrong.com/lw/rw/moral_complexities/", label="Moral Complexities"];
+    f09 [URL="http://lesswrong.com/lw/rx/is_morality_preference/", label="Is Morality Preference?"];
+    f10 [URL="http://lesswrong.com/lw/ry/is_morality_given/", label="Is Morality Given?"];
+    f11 [URL="http://lesswrong.com/lw/s0/where_recursive_justification_hits_bottom/", label="Where Recursive Justification Hits Bottom"];
+    f12 [URL="http://lesswrong.com/lw/s2/my_kind_of_reflection/", label="My Kind of Reflection"];
+    f13 [URL="http://lesswrong.com/lw/s3/the_genetic_fallacy/", label="The Genetic Fallacy"];
+    f14 [URL="http://lesswrong.com/lw/s4/fundamental_doubts/", label="Fundamental Doubts"];
+    f15 [URL="http://lesswrong.com/lw/s5/rebelling_within_nature/", label="Rebelling Within Nature"];
+    f16 [URL="http://lesswrong.com/lw/s6/probability_is_subjectively_objective/", label="Probability is Subjectively Objective"];
+    f17 [URL="http://lesswrong.com/lw/s9/whither_moral_progress/", label="Whither Moral Progress?"];
+    f18 [URL="http://lesswrong.com/lw/sa/the_gift_we_give_to_tomorrow/", label="The Gift We Give To Tomorrow"];
+    f19 [URL="http://lesswrong.com/lw/sb/could_anything_be_right/", label="Could Anything Be Right?"];
+    f20 [URL="http://lesswrong.com/lw/sc/existential_angst_factory/", label="Existential Angst Factory"];
+    f21 [URL="http://lesswrong.com/lw/sh/can_counterfactuals_be_true/", label="Can Counterfactuals Be True?"];
+    f22 [URL="http://lesswrong.com/lw/si/math_is_subjunctively_objective/", label="Math is Subjunctively Objective"];
+    f23 [URL="http://lesswrong.com/lw/sj/does_your_morality_care_what_you_think/", label="Does Your Morality Care What You Think?"];
+    f24 [URL="http://lesswrong.com/lw/sk/changing_your_metaethics/", label="Changing Your Metaethics"];
+    f25 [URL="http://lesswrong.com/lw/sl/setting_up_metaethics/", label="Setting Up Metaethics"];
+    f26 [URL="http://lesswrong.com/lw/sm/the_meaning_of_right/", label="The Meaning of Right"];
+    f27 [URL="http://lesswrong.com/lw/sn/interpersonal_morality/", label="Interpersonal Morality"];
+    f28 [URL="http://lesswrong.com/lw/sw/morality_as_fixed_computation/", label="Morality as Fixed Computation"];
+    f29 [URL="http://lesswrong.com/lw/sx/inseparably_right_or_joy_in_the_merely_good/", label="Inseparably Right; or, Joy in the Merely Good"];
+    f30 [URL="http://lesswrong.com/lw/sy/sorting_pebbles_into_correct_heaps/", label="Sorting Pebbles Into Correct Heaps"];
+    f31 [URL="http://lesswrong.com/lw/sz/moral_error_and_moral_disagreement/", label="Moral Error and Moral Disagreement"];
+    f32 [URL="http://lesswrong.com/lw/t0/abstracted_idealized_dynamics/", label="Abstracted Idealized Dynamics"];
+    f33 [URL="http://lesswrong.com/lw/t1/arbitrary/", label="\"Arbitrary\""];
+    f34 [URL="http://lesswrong.com/lw/t2/is_fairness_arbitrary/", label="Is Fairness Arbitrary?"];
+    f35 [URL="http://lesswrong.com/lw/t3/the_bedrock_of_morality_arbitrary/", label="The Bedrock of Morality: Arbitrary?"];
+    f36 [URL="http://lesswrong.com/lw/t8/you_provably_cant_trust_yourself/", label="You Provably Can't Trust Yourself"];
+    f37 [URL="http://lesswrong.com/lw/t9/no_license_to_be_human/", label="No License To Be Human"];
+    f38 [URL="http://lesswrong.com/lw/ta/invisible_frameworks/", label="Invisible Frameworks"];
+    
+    f01 -> f02 -> f03 -> f04 -> f05 -> f06 -> f07 -> f08 -> f09 -> f10 -> 
+    f11 -> f12 -> f13 -> f14 -> f15 -> f16 -> f17 -> f18 -> f19 -> f20 -> 
+    f21 -> f22 -> f23 -> f24 -> f25 -> f26 -> f27 -> f28 -> f29 -> f30 -> 
+    f31 -> f32 -> f33 -> f34 -> f35 -> f36 -> f37 -> f38;
+  }
+  
+  subgraph cluster_g { // http://lesswrong.com/lw/xy/the_fun_theory_sequence/
+    label = "Fun Theory";
+    graph [style=filled, color=lightgrey];
+    g01 [URL="http://lesswrong.com/lw/wv/prolegomena_to_a_theory_of_fun/", label="Prolegomena to a Theory of Fun"];
+    g02 [URL="http://lesswrong.com/lw/ww/high_challenge/", label="High Challenge"];
+    g03 [URL="http://lesswrong.com/lw/wx/complex_novelty/", label="Complex Novelty"];
+    g04 [URL="http://lesswrong.com/lw/xk/continuous_improvement/", label="Continuous Improvement"];
+    g05 [URL="http://lesswrong.com/lw/wy/sensual_experience/", label="Sensual Experience"];
+    g06 [URL="http://lesswrong.com/lw/wz/living_by_your_own_strength/", label="Living By Your Own Strength"];
+    g07 [URL="http://lesswrong.com/lw/xb/free_to_optimize/", label="Free to Optimize"];
+    g08 [URL="http://lesswrong.com/lw/x2/harmful_options/", label="Harmful Options"];
+    g09 [URL="http://lesswrong.com/lw/x3/devils_offers/", label="Devil's Offers"];
+    g10 [URL="http://lesswrong.com/lw/x4/nonperson_predicates/", label="Nonperson Predicates"];
+    g11 [URL="http://lesswrong.com/lw/x5/nonsentient_optimizers/", label="Nonsentient Optimizers"];
+    g12 [URL="http://lesswrong.com/lw/x7/cant_unbirth_a_child/", label="Can't Unbirth a Child"];
+    g13 [URL="http://lesswrong.com/lw/x8/amputation_of_destiny/", label="Amputation of Destiny"];
+    g14 [URL="http://lesswrong.com/lw/x9/dunbars_function/", label="Dunbar's Function"];
+    g15 [URL="http://lesswrong.com/lw/xr/in_praise_of_boredom/", label="In Praise of Boredom"];
+    g16 [URL="http://lesswrong.com/lw/xs/sympathetic_minds/", label="Sympathetic Minds"];
+    g17 [URL="http://lesswrong.com/lw/xt/interpersonal_entanglement/", label="Interpersonal Entanglement"];
+    g18 [URL="http://lesswrong.com/lw/xu/failed_utopia_42/", label="Failed Utopia #4-2"];
+    g19 [URL="http://lesswrong.com/lw/xd/growing_up_is_hard/", label="Growing Up is Hard"];
+    g20 [URL="http://lesswrong.com/lw/xe/changing_emotions/", label="Changing Emotions"];
+    g21 [URL="http://lesswrong.com/lw/xg/emotional_involvement/", label="Emotional Involvement"];
+    g22 [URL="http://lesswrong.com/lw/xi/serious_stories/", label="Serious Stories"];
+    g23 [URL="http://lesswrong.com/lw/xl/eutopia_is_scary/", label="Eutopia is Scary"];
+    g24 [URL="http://lesswrong.com/lw/xm/building_weirdtopia/", label="Building Weirdtopia"];
+    g25 [URL="http://lesswrong.com/lw/xo/justified_expectation_of_pleasant_surprises/", label="Justified Expectation of Pleasant Surprises"];
+    g26 [URL="http://lesswrong.com/lw/xp/seduced_by_imagination/", label="Seduced by Imagination"];
+    g27 [URL="http://lesswrong.com/lw/xc/the_uses_of_fun_theory/", label="The Uses of Fun (Theory)"];
+    g28 [URL="http://lesswrong.com/lw/xw/higher_purpose/", label="Higher Purpose"];
+    
+    g01 -> g02 -> g03 -> g04 -> g05 -> g06 -> g07 -> g08 -> g09 -> g10 -> 
+    g11 -> g12 -> g13 -> g14 -> g15 -> g16 -> g17 -> g18 -> g19 -> g20 -> 
+    g21 -> g22 -> g23 -> g24 -> g25 -> g26 -> g27 -> g28;
+  }
+  
+  subgraph cluster_h { // http://lesswrong.com/lw/cz/the_craft_and_the_community/
+    label = "The Craft and the Community";
+    graph [style=filled, color=lightgrey];
+    h01 [URL="http://lesswrong.com/lw/1e/raising_the_sanity_waterline/", label="Raising the Sanity Waterline"]; 
+    h02 [URL="http://lesswrong.com/lw/2c/a_sense_that_more_is_possible/", label="A Sense That More Is Possible"];
+    h03 [URL="http://lesswrong.com/lw/2i/epistemic_viciousness/", label="Epistemic Viciousness"]; 
+    h04 [URL="http://lesswrong.com/lw/2j/schools_proliferating_without_evidence/", label="Schools Proliferating Without Evidence"]; 
+    h05 [URL="http://lesswrong.com/lw/2s/3_levels_of_rationality_verification/", label="3 Levels of Rationality Verification"]; 
+    h06 [URL="http://lesswrong.com/lw/3h/why_our_kind_cant_cooperate/", label="Why Our Kind Can't Cooperate"]; 
+    h07 [URL="http://lesswrong.com/lw/42/tolerate_tolerance/", label="Tolerate Tolerance"]; 
+    h08 [URL="http://lesswrong.com/lw/4d/youre_calling_who_a_cult_leader/", label="You're Calling Who A Cult Leader?"]; 
+    h09 [URL="http://lesswrong.com/lw/4y/on_things_that_are_awesome/", label="On Things That Are Awesome"]; 
+    h10 [URL="http://lesswrong.com/lw/5j/your_price_for_joining/", label="Your Price For Joining"]; 
+    h11 [URL="http://lesswrong.com/lw/5t/can_humanism_match_religions_output/", label="Can Humanism Match Religion's Output?"]; 
+    h12 [URL="http://lesswrong.com/lw/5v/church_vs_taskforce/", label="Church vs. Taskforce"]; 
+    h13 [URL="http://lesswrong.com/lw/66/rationality_common_interest_of_many_causes/", label="Rationality: Common Interest of Many Causes"]; 
+    h14 [URL="http://lesswrong.com/lw/64/helpless_individuals/", label="Helpless Individuals"]; 
+    h15 [URL="http://lesswrong.com/lw/65/money_the_unit_of_caring/", label="Money: The Unit of Caring"]; 
+    h16 [URL="http://lesswrong.com/lw/6z/purchase_fuzzies_and_utilons_separately/", label="Purchase Fuzzies and Utilons Separately"]; 
+    h17 [URL="http://lesswrong.com/lw/77/selecting_rationalist_groups/", label="Selecting Rationalist Groups"]; 
+    h18 [URL="http://lesswrong.com/lw/7k/incremental_progress_and_the_valley/", label="Incremental Progress and the Valley"]; 
+    h19 [URL="http://lesswrong.com/lw/8t/whiningbased_communities/", label="Whining-Based Communities"]; 
+    h20 [URL="http://lesswrong.com/lw/9c/mandatory_secret_identities/", label="Mandatory Secret Identities"]; 
+    h21 [URL="http://lesswrong.com/lw/9v/beware_of_otheroptimizing/", label="Beware of Other-Optimizing"]; 
+    h22 [URL="http://lesswrong.com/lw/ab/akrasia_and_shangrila/", label="Akrasia and Shangri-La"]; 
+    h23 [URL="http://lesswrong.com/lw/9m/collective_apathy_and_the_internet/", label="Collective Apathy and the Internet"]; 
+    h24 [URL="http://lesswrong.com/lw/5f/bayesians_vs_barbarians/", label="Bayesians vs. Barbarians"]; 
+    h25 [URL="http://lesswrong.com/lw/ap/of_gender_and_rationality/", label="Of Gender and Rationality"]; 
+    h26 [URL="http://lesswrong.com/lw/bd/my_way/", label="My Way"]; 
+    h27 [URL="http://lesswrong.com/lw/c3/the_sin_of_underconfidence/", label="The Sin of Underconfidence"]; 
+    h28 [URL="http://lesswrong.com/lw/c1/wellkept_gardens_die_by_pacifism/", label="Well-Kept Gardens Die By Pacifism"]; 
+    h29 [URL="http://lesswrong.com/lw/d4/practical_advice_backed_by_deep_theories/", label="Practical Advice Backed By Deep Theories"]; 
+    h30 [URL="http://lesswrong.com/lw/d3/less_meta/", label="Less Meta"];
+    h31 [URL="http://lesswrong.com/lw/c4/go_forth_and_create_the_art/", label="Go Forth and Create the Art!"];
+    
+    h01 -> h02 -> h03 -> h04 -> h05 -> h06 -> h07 -> h08 -> h09 -> h10 -> 
+    h11 -> h12 -> h13 -> h14 -> h15 -> h16 -> h17 -> h18 -> h19 -> h20 -> 
+    h21 -> h22 -> h23 -> h24 -> h25 -> h26 -> h27 -> h28 -> h29 -> h30 -> 
+    h31;
+  }
+}
+
